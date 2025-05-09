@@ -1,9 +1,10 @@
 <?php
 // Configuration de la base de données
-$host = "sql307.byethost4.com";
-$db_name = "b4_38932554_prets_bancaires";
-$username = "b4_38932554";
-$password = "app2025";
+require_once 'config.php';
+
+// Configurer les en-têtes CORS
+setCorsHeaders();
+
 
 // Vérification de la méthode de requête
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {

@@ -1,10 +1,10 @@
 <?php
 // Configuration de la base de données
-$host = "sql213.infinityfree.com";
-$db_name = "if0_38923779_prets_bancaires";
-$username = "if0_38923779";
-$password = "app2025bank";
-
+$host = "mysql.railway.internal";
+$db_name = "railway'";
+$username = "root";
+$password = "KoZscdOZWivBoEjQOZlOzJMEhQnavnrW";
+$db_port = getenv('3306');
 try {
     $conn = new PDO("mysql:host=$host;dbname=$db_name", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
